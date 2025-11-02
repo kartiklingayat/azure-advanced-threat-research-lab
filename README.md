@@ -6,6 +6,35 @@ Advanced threat research and vulnerability assessment platform using Azure Secur
 ## 🔍 Overview
 Advanced threat research platform implementing Zero Trust architecture and vulnerability assessment in Azure environments. Designed mitigation strategies for 15+ security vulnerabilities and improved network security agility.
 
+ai-powered-security-automation/
+│
+├── src/
+│   ├── security_automation.py
+│   ├── ml_analyzer.py
+│   ├── incident_response.py
+│   └── log_processor.py
+│
+├── aws_lambda/
+│   ├── security_automation.py
+│   ├── threat_detection.py
+│   └── requirements.txt
+│
+├── cloudformation/
+│   ├── security-automation-template.yaml
+│   └── parameters.json
+│
+├── docs/
+│   ├── architecture.md
+│   ├── deployment_guide.md
+│   └── api_reference.md
+│
+├── tests/
+│   ├── test_security_automation.py
+│   └── test_ml_analyzer.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore 
 ## 🎯 Features
 - Zero Trust Architecture implementation
 - Automated vulnerability assessment
