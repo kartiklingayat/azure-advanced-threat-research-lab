@@ -1,0 +1,5 @@
+from src.vulnerability_scanner import AzureSecurityScanner
+
+scanner = AzureSecurityScanner()
+vulnerabilities = scanner.scan_subscription()
+print(f"Found {len(vulnerabilities)} security issues")
