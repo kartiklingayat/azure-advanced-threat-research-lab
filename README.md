@@ -1,12 +1,11 @@
-```markdown
 # 🔍 Azure Advanced Threat Research Lab
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
 [![Azure](https://img.shields.io/badge/Azure-Security_Center-0078D4)](https://azure.microsoft.com)
 [![Zero Trust](https://img.shields.io/badge/Zero-Trust_Architecture-red)](https://microsoft.com/security)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen)](tests/)
 [![Coverage](https://img.shields.io/badge/Coverage-85%25-green)](tests/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 **Advanced threat research platform implementing Zero Trust architecture and vulnerability assessment in Azure environments**
 
