@@ -1,55 +1,54 @@
-🔍 Azure Advanced Threat Research Lab
-https://img.shields.io/badge/Python-3.8+-blue
-https://img.shields.io/badge/Azure-Security_Center-0078D4
-https://img.shields.io/badge/Zero-Trust_Architecture-red
-https://img.shields.io/badge/License-MIT-green
-https://img.shields.io/badge/Tests-Passing-brightgreen
-https://img.shields.io/badge/Coverage-85%2525-green
+```markdown
+# 🔍 Azure Advanced Threat Research Lab
 
-Advanced threat research platform implementing Zero Trust architecture and vulnerability assessment in Azure environments
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
+[![Azure](https://img.shields.io/badge/Azure-Security_Center-0078D4)](https://azure.microsoft.com)
+[![Zero Trust](https://img.shields.io/badge/Zero-Trust_Architecture-red)](https://microsoft.com/security)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen)](tests/)
+[![Coverage](https://img.shields.io/badge/Coverage-85%25-green)](tests/)
 
-🧠 Overview
+**Advanced threat research platform implementing Zero Trust architecture and vulnerability assessment in Azure environments**
+
+---
+
+## 🧠 Overview
+
 A comprehensive Azure security research lab designed to identify, assess, and mitigate security vulnerabilities using Zero Trust principles. The platform automates vulnerability scanning across 50+ Azure resource types, implements least-privilege access policies, and provides real-time security posture monitoring across Azure subscriptions.
 
-🎯 Key Achievements
-15+ vulnerabilities identified and mitigated in production environments
+### 🎯 Key Achievements
+- **15+ vulnerabilities** identified and mitigated in production environments
+- **Zero Trust architecture** implemented with 100% policy compliance
+- **Project delivered 2 weeks ahead** of schedule
+- **Security agility** improved through automated assessment workflows
 
-Zero Trust architecture implemented with 100% policy compliance
+---
 
-Project delivered 2 weeks ahead of schedule
+## ✨ Features
 
-Security agility improved through automated assessment workflows
+### 🔍 Security Assessment
+- **Comprehensive Vulnerability Scanning** - 50+ Azure resource types
+- **Real-time Compliance Monitoring** - Continuous security assessment
+- **Azure Security Center Integration** - Unified security management
+- **Automated Risk Scoring** - Quantitative security metrics
 
-✨ Features
-🔍 Security Assessment
-Comprehensive Vulnerability Scanning - 50+ Azure resource types
+### 🛡️ Zero Trust Implementation
+- **Least-Privilege Access Controls** - Role-based access management
+- **Network Segmentation** - Micro-segmentation policies
+- **Identity Protection** - MFA and conditional access
+- **Data Protection** - Encryption and classification
 
-Real-time Compliance Monitoring - Continuous security assessment
+### 📊 Analytics & Reporting
+- **Threat Hunting Capabilities** - Advanced security analytics
+- **Automated Security Reports** - JSON and console outputs
+- **Compliance Dashboards** - Real-time security posture
+- **Remediation Guidance** - Actionable security recommendations
 
-Azure Security Center Integration - Unified security management
+---
 
-Automated Risk Scoring - Quantitative security metrics
+## 🏗️ Architecture
 
-🛡️ Zero Trust Implementation
-Least-Privilege Access Controls - Role-based access management
-
-Network Segmentation - Micro-segmentation policies
-
-Identity Protection - MFA and conditional access
-
-Data Protection - Encryption and classification
-
-📊 Analytics & Reporting
-Threat Hunting Capabilities - Advanced security analytics
-
-Automated Security Reports - JSON and console outputs
-
-Compliance Dashboards - Real-time security posture
-
-Remediation Guidance - Actionable security recommendations
-
-🏗️ Architecture
-text
+```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │  Azure Resources │───▶│  Threat Scanner   │───▶│ Zero Trust      │
 │                 │    │                  │    │ Policy Engine   │
@@ -66,15 +65,25 @@ text
                         │ • Compliance Reports│
                         │ • Security Scoring │
                         └───────────────────┘
-⚙️ Tech Stack
-Category	Technologies
-Programming	Python 3.8+, Azure SDK
-Azure Services	Security Center, Monitor, Active Directory, Compute, Storage
-Security Tools	Azure Security Center API, Network Security Groups, Azure Policy
-Authentication	Azure CLI, Service Principal, Managed Identity
-Testing	Pytest, unittest, Mock
-📁 Project Structure
-text
+```
+
+---
+
+## ⚙️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Programming** | Python 3.8+, Azure SDK |
+| **Azure Services** | Security Center, Monitor, Active Directory, Compute, Storage |
+| **Security Tools** | Azure Security Center API, Network Security Groups, Azure Policy |
+| **Authentication** | Azure CLI, Service Principal, Managed Identity |
+| **Testing** | Pytest, unittest, Mock |
+
+---
+
+## 📁 Project Structure
+
+```
 azure-advanced-threat-research-lab/
 ├── src/
 │   ├── main.py                    # Main application entry point
@@ -89,18 +98,22 @@ azure-advanced-threat-research-lab/
 ├── .env.example                   # Environment configuration template
 ├── LICENSE                        # MIT License
 └── README.md                      # This file
-🚀 Quick Start
-Prerequisites
-Azure Subscription with owner/contributor permissions
+```
 
-Azure Security Center enabled (Standard tier recommended)
+---
 
-Python 3.8+ installed on your system
+## 🚀 Quick Start
 
-Azure CLI installed and configured
+### Prerequisites
 
-Installation
-bash
+- **Azure Subscription** with owner/contributor permissions
+- **Azure Security Center** enabled (Standard tier recommended)
+- **Python 3.8+** installed on your system
+- **Azure CLI** installed and configured
+
+### Installation
+
+```bash
 # Clone the repository
 git clone https://github.com/kartiklingayat/azure-advanced-threat-research-lab.git
 cd azure-advanced-threat-research-lab
@@ -116,8 +129,11 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-Azure Authentication
-bash
+```
+
+### Azure Authentication
+
+```bash
 # Option 1: Azure CLI (Recommended for development)
 az login
 
@@ -129,12 +145,18 @@ cp .env.example .env
 # AZURE_TENANT_ID=your-tenant-id
 # AZURE_CLIENT_ID=your-client-id
 # AZURE_CLIENT_SECRET=your-client-secret
-Running the Application
-bash
+```
+
+### Running the Application
+
+```bash
 # Run comprehensive security assessment
 python src/main.py
-Example Output
-text
+```
+
+### Example Output
+
+```text
 [+] Initializing Azure Threat Research Lab...
 [+] Scanning Azure resources for vulnerabilities...
 [✓] Scanned Virtual Machines: 8 vulnerabilities found
@@ -175,91 +197,99 @@ text
 ============================================================
 
 [✓] Azure Advanced Threat Research Lab completed successfully!
-Running Tests
-bash
+```
+
+### Running Tests
+
+```bash
 # Run all tests
 python -m pytest tests/ -v
 
 # Run with coverage report
 python -m pytest tests/ --cov=src --cov-report=html
-📊 Results Achieved
-Achievement	Impact
-Vulnerabilities Mitigated	15+ security issues resolved across multiple subscriptions
-Security Agility	Improved through automated Zero Trust implementation
-Project Delivery	Completed 2 weeks ahead of schedule
-Compliance	Automated security checks for continuous compliance
-Risk Reduction	40% improvement in security posture score
-🎯 Use Cases
-🔒 Enterprise Security Teams
-Continuous Security Monitoring - Automated vulnerability assessment
+```
 
-Compliance Reporting - Generate compliance reports for audits
+---
 
-Threat Hunting - Proactive security threat identification
+## 📊 Results Achieved
 
-☁️ Cloud Security Architects
-Zero Trust Implementation - Reference architecture for Zero Trust
+| Achievement | Impact |
+|-------------|---------|
+| **Vulnerabilities Mitigated** | 15+ security issues resolved across multiple subscriptions |
+| **Security Agility** | Improved through automated Zero Trust implementation |
+| **Project Delivery** | Completed 2 weeks ahead of schedule |
+| **Compliance** | Automated security checks for continuous compliance |
+| **Risk Reduction** | 40% improvement in security posture score |
 
-Security Baseline Creation - Establish security baselines
+---
 
-Policy Enforcement - Automated security policy management
+## 🎯 Use Cases
 
-🔧 DevOps & SecOps
-CI/CD Integration - Security scanning in deployment pipelines
+### 🔒 Enterprise Security Teams
+- **Continuous Security Monitoring** - Automated vulnerability assessment
+- **Compliance Reporting** - Generate compliance reports for audits
+- **Threat Hunting** - Proactive security threat identification
 
-Infrastructure as Code - Security validation for IaC templates
+### ☁️ Cloud Security Architects  
+- **Zero Trust Implementation** - Reference architecture for Zero Trust
+- **Security Baseline Creation** - Establish security baselines
+- **Policy Enforcement** - Automated security policy management
 
-Incident Response - Rapid security assessment during incidents
+### 🔧 DevOps & SecOps
+- **CI/CD Integration** - Security scanning in deployment pipelines
+- **Infrastructure as Code** - Security validation for IaC templates
+- **Incident Response** - Rapid security assessment during incidents
 
-📚 Security Research
-Azure Security Research - Platform for security experiments
+### 📚 Security Research
+- **Azure Security Research** - Platform for security experiments
+- **Vulnerability Management** - Research new vulnerability patterns
+- **Security Tool Development** - Base for building security tools
 
-Vulnerability Management - Research new vulnerability patterns
+---
 
-Security Tool Development - Base for building security tools
+## 🔮 Future Enhancements
 
-🔮 Future Enhancements
-🚀 Planned Features
-Azure Sentinel Integration - SIEM integration for advanced analytics
+### 🚀 Planned Features
+- **Azure Sentinel Integration** - SIEM integration for advanced analytics
+- **Machine Learning Threat Prediction** - AI-powered threat detection
+- **Multi-cloud Vulnerability Assessment** - Extend to AWS and GCP
+- **Automated Remediation Workflows** - Auto-fix common security issues
 
-Machine Learning Threat Prediction - AI-powered threat detection
+### 🔄 Continuous Improvement
+- **Extended Resource Coverage** - Support for additional Azure services
+- **Enhanced Reporting** - Interactive dashboards and visualizations
+- **API Development** - REST API for integration with other tools
+- **Performance Optimization** - Parallel scanning for large environments
 
-Multi-cloud Vulnerability Assessment - Extend to AWS and GCP
+---
 
-Automated Remediation Workflows - Auto-fix common security issues
+## 👨‍💻 Author
 
-🔄 Continuous Improvement
-Extended Resource Coverage - Support for additional Azure services
+**Kartik Lingayat**  
+📍 Pune, Maharashtra, India  
+📧 kartiklingayat019@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/kartiklingayat) | [GitHub](https://github.com/kartiklingayat)
 
-Enhanced Reporting - Interactive dashboards and visualizations
+### 💼 Professional Background
+- Cloud Security Specialist with expertise in Azure security
+- Zero Trust Architecture implementation experience  
+- Multi-cloud security assessment and automation
+- Security research and threat intelligence
 
-API Development - REST API for integration with other tools
+---
 
-Performance Optimization - Parallel scanning for large environments
+## 🤝 Contributing
 
-👨‍💻 Author
-Kartik Lingayat
-📍 Pune, Maharashtra, India
-📧 kartiklingayat019@gmail.com
-🔗 LinkedIn | GitHub
+We welcome contributions from the security community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-💼 Professional Background
-Cloud Security Specialist with expertise in Azure security
-
-Zero Trust Architecture implementation experience
-
-Multi-cloud security assessment and automation
-
-Security research and threat intelligence
-
-🤝 Contributing
-We welcome contributions from the security community! Please see our Contributing Guidelines for details.
-
-🐛 Reporting Issues
+### 🐛 Reporting Issues
 Found a bug or have a feature request? Please open an issue on GitHub.
 
-💡 Feature Requests
+### 💡 Feature Requests
 Have an idea for improving this project? We'd love to hear it!
 
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
